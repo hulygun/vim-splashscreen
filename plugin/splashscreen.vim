@@ -2,8 +2,8 @@
 let s:header = ''
 
 " Function 
-function! Splash() abort
+function! splashscreen#splash() abort
     call VimEntry * enew
 endfunction
 
-autocmd call Splash()
+autocmd splashscreen#splash()
