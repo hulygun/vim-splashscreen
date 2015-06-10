@@ -70,7 +70,7 @@ function! splashscreen#projects() abort
       let l:splitstring = split(bookmark)  	    
       call append('$', ['   [' . l:count . ']  ' . bookmark,''])
       call s:register(line('$'), l:count, 'special', ':call splashscreen#launchproject("' . l:splitstring[0] . '")', '')
-      let l:count = +1
+      let l:count += 1
     endif
   endfor    
 endfunction       	
